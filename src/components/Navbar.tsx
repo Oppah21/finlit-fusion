@@ -1,15 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, Wallet } from "lucide-react";
+import { Menu, X, Hammer } from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Features", href: "#features" },
-    { label: "Dashboard", href: "#dashboard" },
-    { label: "Learn", href: "#learn" },
-    { label: "About", href: "#about" },
+    { label: "Browse", href: "#browse" },
+    { label: "Categories", href: "#categories" },
+    { label: "How it Works", href: "#how-it-works" },
+    { label: "For Artisans", href: "#artisans" },
   ];
 
   return (
@@ -19,10 +19,10 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="p-2 rounded-lg bg-primary/10">
-              <Wallet className="w-6 h-6 text-primary" />
+              <Hammer className="w-6 h-6 text-primary" />
             </div>
             <span className="text-xl font-bold">
-              Fin<span className="text-primary">Lit</span>
+              Artisan<span className="text-primary">Hub</span>
             </span>
           </div>
 
@@ -45,7 +45,7 @@ const Navbar = () => {
               Sign In
             </Button>
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-neon">
-              Get Started
+              Post a Job
             </Button>
           </div>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
                   Sign In
                 </Button>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-neon">
-                  Get Started
+                  Post a Job
                 </Button>
               </div>
             </div>
