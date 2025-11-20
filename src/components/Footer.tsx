@@ -1,11 +1,11 @@
-import { Wallet, Github, Twitter, Linkedin } from "lucide-react";
+import { Hammer, Github, Twitter, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const footerLinks = {
-    Product: ["Features", "Pricing", "Security", "Roadmap"],
-    Resources: ["Blog", "Documentation", "Help Center", "Contact"],
+    "For Homeowners": ["Find Artisans", "Post a Job", "How it Works", "Safety"],
+    "For Artisans": ["Join Platform", "Pricing", "Success Stories", "Resources"],
     Company: ["About", "Careers", "Press Kit", "Partners"],
-    Legal: ["Privacy", "Terms", "Cookies", "Licenses"],
+    Legal: ["Privacy", "Terms", "Trust & Safety", "Licenses"],
   };
 
   const socialLinks = [
@@ -22,14 +22,14 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="p-2 rounded-lg bg-primary/10">
-                <Wallet className="w-5 h-5 text-primary" />
+                <Hammer className="w-5 h-5 text-primary" />
               </div>
               <span className="text-lg font-bold">
-                Fin<span className="text-primary">Lit</span>
+                Artisan<span className="text-primary">Hub</span>
               </span>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              Master your money, build your future with intelligent financial management.
+              Connecting homeowners with skilled, verified artisans for quality craftsmanship.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -68,10 +68,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2025 FinLit. All rights reserved.
+            © 2025 ArtisanHub. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Built with <span className="text-primary">♥</span> for financial empowerment
+            Built with <span className="text-primary">♥</span> for quality craftsmanship
           </p>
         </div>
       </div>
